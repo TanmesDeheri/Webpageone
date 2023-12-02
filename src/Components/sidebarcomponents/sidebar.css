@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+main {
+  width: 100%;
+  padding: 20px;
+}
+
+.sidebar {
+  background-color: #1f1f1f;
+  color: wheat;
+  height: 250vh;
+  width: 30%;
+  transition: all 0.5s;
+}
+
+.top_section {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+}
+
+.link {
+  margin: 2%;
+  display: flex;
+  color: wheat;
+  padding: 10px 15px;
+  gap: 15px;
+  border-radius: 19px;
+  transition: all 0.5ms;
+}
+
+.link:hover {
+  margin-right: 7px;
+  background: wheat;
+  color: #1f1f1f;
+  border: 2px solid rgb(206, 236, 38);
+  transition: all 0.5;
+}
+
+.active {
+  margin-right: 7px;
+  background: #1f1f1f;
+  border: 2px solid wheat;
+  color: wheat;
+  transition: all 0.5s;
+}
+
+.icon,
+.link_text {
+  font-size: 20px;
+}
+
+.bars {
+  display: flex;
+  font-size: 2em;
+  margin-left: 50px;
+  transition: all 0.5s;
+  animation-name: spin,rgbAnimation;
+  animation-duration: 2s,4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear,ease-in-out;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rgbAnimation {
+  0% {
+    color: red;
+  }
+  25% {
+    color: green;
+  }
+  50% {
+    color: blue;
+  }
+  100%{
+    color: red;
+  }
+
+}
+.bars:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,49 @@
+.FileUploadPage{
+    background-image: url(../../assests/fileuploadimage2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-attachment: fixed;
+}
+.fileUploadPane{
+    height: 15rem;
+    width: 50em;
+    border: 1px solid #1f1f1f;
+    border-radius: 2px;
+    box-shadow:
+    0 2px 5px rgba(0, 0, 0, 0.2),
+    0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.fileUploadPane{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.fileUploadIcon{
+    display: grid;
+    font-size: 3rem;
+    justify-content: center;
+}
+.fileiconcolor{
+    color: wheat;
+    font-size: 1.5rem;
+    padding-right: 1px;
+}
+.fileiconcolor:hover{
+    color: rgb(19, 234, 19);
+    font-size: 1.5rem;
+    padding-right: 1px;
+    transition: all 0.5s;
+}
+.deleteIcon{
+    font-size: 1.3rem;
+    padding-right: 1px;
+    transition: all 0.5s;
+}
+.deleteIcon:hover{
+    font-size: 2rem;
+    padding-right: 1px;
+    cursor: pointer;
+    color: #FF033E;
+    transition: all 0.5s
+}
